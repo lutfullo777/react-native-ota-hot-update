@@ -103,7 +103,7 @@ class OtaHotUpdateModule internal constructor(context: ReactApplicationContext) 
     if (version != "") {
       promise.resolve(version)
     } else {
-      promise.resolve("0")
+      promise.resolve(reactApplicationContext.getVersionCode())
     }
   }
 
